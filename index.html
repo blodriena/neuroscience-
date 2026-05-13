@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NeuraLuxe • neuroscience illuminated</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='12' fill='none' stroke='%23b392f0' stroke-width='2.5'/%3E%3Cpath d='M32 20 L32 12 M32 44 L32 52 M20 32 L12 32 M44 32 L52 32' stroke='%23b392f0' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='10' r='2.5' fill='%23d9c5ff'/%3E%3Ccircle cx='32' cy='54' r='2.5' fill='%23d9c5ff'/%3E%3Ccircle cx='10' cy='32' r='2.5' fill='%23d9c5ff'/%3E%3Ccircle cx='54' cy='32' r='2.5' fill='%23d9c5ff'/%3E%3Ccircle cx='28' cy='24' r='2' fill='%23a5d8ff'/%3E%3Ccircle cx='36' cy='40' r='2' fill='%23a5d8ff'/%3E%3Cpath d='M28 24 L26 18 M36 40 L38 46' stroke='%23b392f0' stroke-width='1.8'/%3E%3C/svg%3E">
+  
+</head>
+<body>
+  <canvas id="neuronCanvas"></canvas>
+  <div class="dark-grain"></div>
+
+  <div class="content">
+    <header style="margin-bottom: 1rem;">
+      <h1>SYNAPTIC DEPTH</h1>
+      <div class="subtitle">neuroscience · consciousness · neural architectures</div>
+    </header>
+
+    <section class="history-section">
+      <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">⚡ Historical Milestones</h2>
+      <div class="timeline-grid">
+        <div class="timeline-item"><strong>1791</strong> Luigi Galvani — animal electricity</div>
+        <div class="timeline-item"><strong>1906</strong> Golgi & Cajal — neuron doctrine</div>
+        <div class="timeline-item"><strong>1952</strong> Hodgkin-Huxley model</div>
+        <div class="timeline-item"><strong>2013</strong> BRAIN Initiative launched</div>
+        <div class="timeline-item"><strong>2024</strong> Connectomics & AI fusion</div>
+      </div>
+      <p style="margin-top: 1.8rem; color: #b9c2e0;">From Luigi Galvani's frog legs to modern optogenetics, neuroscience evolved through daring experiments. Santiago Ramón y Cajal's drawings revealed the neuron as a discrete unit — a paradigm shift that still inspires.</p>
+    </section>
+
+    <h2 style="font-size: 2.4rem; margin: 2.5rem 0 1.2rem;">📄 50 Illuminating Articles</h2>
+    <div class="articles-grid" id="articlesContainer"></div>
+
+    <section class="creative-section" style="margin-top: 4rem;">
+      <h2 style="font-size: 2rem;">🧠 Neuroplasticity & the Adaptable Brain</h2>
+      <div class="creative-dual">
+        <div><p style="color: #ccd6f0;">The brain rewires itself constantly. London taxi drivers show enlarged hippocampi; stroke survivors regain function through adjacent cortical remapping. This dynamic reshaping underpins learning and recovery.</p></div>
+        <div><p style="color: #ccd6f0;">Recent studies reveal that even adult brains generate new neurons in the dentate gyrus. Environmental enrichment and exercise boost neurogenesis, challenging decades of dogma.</p></div>
+      </div>
+    </section>
+
+    <section class="creative-section">
+      <h2 style="font-size: 2rem;">🔮 Future of Consciousness Research</h2>
+      <div class="creative-dual">
+        <div><p style="color: #ccd6f0;">Integrated Information Theory (IIT) proposes a mathematical framework for consciousness. Meanwhile, global workspace theory suggests conscious access arises from widespread brain ignition.</p></div>
+        <div><p style="color: #ccd6f0;">Neural organoids and brain-computer interfaces are pushing ethical boundaries. The coming decade may redefine what it means to be conscious.</p></div>
+      </div>
+    </section>
+
+    <footer class="footer-credit">
+      <span>✨ crafted by <strong>Toirova Charos</strong></span>
+      <span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        <a class="github-link" href="https://github.com/blodriena" target="_blank">github.com/blodriena</a>
+      </span>
+    </footer>
+  </div>
+
+  <div class="article-modal" id="articleModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModalBtn">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
