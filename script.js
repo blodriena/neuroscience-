@@ -9,9 +9,6 @@
 
 
 
-
-
-
       function resizeCanvas() {
         width = window.innerWidth;
         height = window.innerHeight;
