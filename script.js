@@ -6,6 +6,8 @@
       const PARTICLE_COUNT = 110;
 
 
+
+      
       function resizeCanvas() {
         width = window.innerWidth;
         height = window.innerHeight;
