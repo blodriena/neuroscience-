@@ -3,10 +3,7 @@
       const ctx = canvas.getContext('2d');
       let width, height;
       let particles = [];
-      const PARTICLE_COUNT = 110;
-
-
-      
+      const PARTICLE_COUNT = 110; 
       function resizeCanvas() {
         width = window.innerWidth;
         height = window.innerHeight;
